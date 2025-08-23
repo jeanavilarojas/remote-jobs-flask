@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}Remote Jobs{% endblock %}
+
+{% block content %}
+  <h1 class="mb-4">Remote Jobs</h1>
+
+  <!-- Filtros -->
+  <div class="mb-4">
+    <a href="/" class="btn {% if not selected_category %}btn-primary{% else %}btn-outline-primary{% endif %}">
+      Todos
+    </a>
+    {% for cat in categories %}
+      <a href="/?category={{ cat }}" class="btn {% if selected_category == cat %}btn-primary{% else %}btn-outline-primary{% endif %}">
+        {{ cat }}
+      </a>
+    {% endfor %}
+  </div>
+
+  <!-- Resultados -->
+  <div class="row">
+    {% for job in jobs %}
+      <div class="col-md-6 mb-3">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">{{ job.title }}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{ job.company_name }}</h6>
+            <p><span class="badge bg-secondary">{{ job.category }}</span></p>
+            <a href="{{ job.url }}" target="_blank" class="btn btn-sm btn-success">Ver Oferta</a>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}
