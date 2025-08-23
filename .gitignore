@@ -1,15 +1,15 @@
-# Entornos virtuales
+# Virtual environments
 .venv/
 venv/
 
-# Archivos de caché de Python
+# Python cache files
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 
-# Archivos de entorno/locales
+# Environment/Local files
 .env
 
-# Archivos de macOS
+# macOS files
 .DS_Store
