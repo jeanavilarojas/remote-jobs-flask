@@ -12,7 +12,7 @@ def index():
     category = request.args.get("category", "")
     query = request.args.get("q", "").lower()
     page = int(request.args.get("page", 1))
-    per_page = 10  # Jobs per page
+    per_page = 20  # Jobs per page
 
     response = requests.get(API_URL)
     data = response.json()
