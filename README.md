@@ -2,8 +2,6 @@
 
 A simple **Flask web application** that allows users to browse and filter remote job opportunities using the [Remotive API](https://remotive.com/api/remote-jobs).
 
----
-
 ## Features
 
 * **Category Filtering**: View jobs by category or show all available listings.
