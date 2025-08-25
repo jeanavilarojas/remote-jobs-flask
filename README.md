@@ -1,13 +1,11 @@
 # Remote Jobs Finder
 
-A simple **Flask web application** that allows users to browse and filter remote job opportunities using the [Remotive API](https://remotive.com/api/remote-jobs).
+A simple Flask web application that allows users to browse and filter remote job opportunities using the [Remotive API](https://remotive.com/api/remote-jobs).
 
 ## Features
 
 * **Category Filtering**: View jobs by category or show all available listings.
 * **Search Functionality**: Find jobs by title or company name.
-* **Pagination**: Results are paginated for better readability.
-* **Dark/Light Mode Toggle**: Users can customize their viewing experience.
 * **Live Data**: All job postings are fetched in real-time from the Remotive API.
 
 ## Tech Stack
